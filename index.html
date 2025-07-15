@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagramok</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: #f5f5f5;
+    }
+
+    .wrapper {
+      max-width: 100%;
+      padding: 20px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .row iframe {
+      flex: 1;
+      height: 600px;
+      border: none;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .column iframe {
+      width: 80%;
+      max-width: 1200px;
+      height: 600px;
+      border: none;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <h1>Kvíz vizualizációk</h1>
+
+    <!-- Sor 1: diagram 1 és 2 -->
+    <div class="row">
+      <iframe src="sankey2025_3.html"></iframe>
+      <iframe src="sankey2024_.html"></iframe>
+    </div>
+
+    <!-- Sor 2: diagram 3 és 4 -->
+    <div class="row">
+      <iframe src="radar_2025.html"></iframe>
+      <iframe src="radar_2024.html"></iframe>
+    </div>
+
+    <!-- Oszlopban: diagram 5 és 6 -->
+    <div class="column">
+      <iframe src="heat_2025.html"></iframe>
+      <iframe src="chord_diagram.html"></iframe>
+    </div>
+
+  </div>
+
+</body>
+</html>
