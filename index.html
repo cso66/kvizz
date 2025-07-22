@@ -34,15 +34,16 @@
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
 
-    .full-row {
-      width: 100%;
+    .column {
       display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
     }
 
-    .full-row iframe {
+    .column iframe {
       width: 95%;
+      max-width: 1600px;
       height: 800px;
       border: none;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
@@ -72,18 +73,10 @@
       <iframe src="radar_2024.html"></iframe>
     </div>
 
-    <!-- Animáció (teljes sor, középen, szélesen) -->
-    <div class="full-row">
+    <!-- Oszlopban az utolsó három vizualizáció -->
+    <div class="column">
       <iframe src="animacio_lassitva.html"></iframe>
-    </div>
-
-    <!-- Heatmap (teljes sor, középen) -->
-    <div class="full-row">
       <iframe src="heat_2025.html" style="height: 600px;"></iframe>
-    </div>
-
-    <!-- Chord diagram (teljes sor, középen) -->
-    <div class="full-row">
       <iframe src="chord_diagram.html" style="height: 700px;"></iframe>
     </div>
 
