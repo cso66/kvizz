@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,21 +33,17 @@
       border: none;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
-    .row.large iframe {
-  height: 800px;
-  width: 100%;
-  }
-    .column {
+
+    .full-row {
+      width: 100%;
+      margin-bottom: 30px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
+      justify-content: center;
     }
 
-    .column iframe {
-      width: 80%;
-      max-width: 1200px;
-      height: 1000px;
+    .full-row iframe {
+      width: 95%;
+      height: 800px;
       border: none;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
@@ -65,24 +60,31 @@
 
     <h1>Kvíz vizualizációk</h1>
 
-    <!-- Sor 1: diagram 1 és 2 -->
+    <!-- Sor 1: sankey diagramok -->
     <div class="row">
       <iframe src="sankey2025_3.html"></iframe>
       <iframe src="sankey2024_.html"></iframe>
     </div>
 
-    <!-- Sor 2: diagram 3 és 4 -->
+    <!-- Sor 2: radar diagramok -->
     <div class="row">
       <iframe src="radar_2025.html"></iframe>
       <iframe src="radar_2024.html"></iframe>
     </div>
 
-
-    <!-- Oszlopban: diagram 5 és 6 -->
-    <div class="column">
-      <iframe src="heat_2025.html"></iframe>
-      <iframe src="chord_diagram.html"></iframe>
+    <!-- Nagy animáció (teljes szélességben) -->
+    <div class="full-row">
       <iframe src="animacio_lassitva.html"></iframe>
+    </div>
+
+    <!-- Heatmap külön sorban -->
+    <div class="full-row">
+      <iframe src="heat_2025.html"></iframe>
+    </div>
+
+    <!-- Chord diagram külön sorban -->
+    <div class="full-row">
+      <iframe src="chord_diagram.html"></iframe>
     </div>
 
   </div>
