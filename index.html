@@ -16,7 +16,7 @@
     }
 
     .wrapper {
-      max-width: 100%;
+      width: 100%;
       padding: 20px;
     }
 
@@ -37,13 +37,12 @@
     .full-row {
       width: 100%;
       margin-bottom: 30px;
-      display: flex;
-      justify-content: center;
     }
 
     .full-row iframe {
-      width: 95%;
+      width: 100%;
       height: 800px;
+      display: block;
       border: none;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
@@ -72,17 +71,17 @@
       <iframe src="radar_2024.html"></iframe>
     </div>
 
-    <!-- Nagy animáció (teljes szélességben) -->
+    <!-- Animáció (teljes sor) -->
     <div class="full-row">
       <iframe src="animacio_lassitva.html"></iframe>
     </div>
 
-    <!-- Heatmap külön sorban -->
+    <!-- Heatmap (teljes sor) -->
     <div class="full-row">
       <iframe src="heat_2025.html"></iframe>
     </div>
 
-    <!-- Chord diagram külön sorban -->
+    <!-- Chord diagram (teljes sor) -->
     <div class="full-row">
       <iframe src="chord_diagram.html"></iframe>
     </div>
