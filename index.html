@@ -36,13 +36,14 @@
 
     .full-row {
       width: 100%;
+      display: flex;
+      justify-content: center;
       margin-bottom: 30px;
     }
 
     .full-row iframe {
-      width: 100%;
+      width: 95%;
       height: 800px;
-      display: block;
       border: none;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
@@ -71,19 +72,19 @@
       <iframe src="radar_2024.html"></iframe>
     </div>
 
-    <!-- Animáció (teljes sor) -->
+    <!-- Animáció (teljes sor, középen, szélesen) -->
     <div class="full-row">
       <iframe src="animacio_lassitva.html"></iframe>
     </div>
 
-    <!-- Heatmap (teljes sor) -->
+    <!-- Heatmap (teljes sor, középen) -->
     <div class="full-row">
-      <iframe src="heat_2025.html"></iframe>
+      <iframe src="heat_2025.html" style="height: 600px;"></iframe>
     </div>
 
-    <!-- Chord diagram (teljes sor) -->
+    <!-- Chord diagram (teljes sor, középen) -->
     <div class="full-row">
-      <iframe src="chord_diagram.html"></iframe>
+      <iframe src="chord_diagram.html" style="height: 700px;"></iframe>
     </div>
 
   </div>
