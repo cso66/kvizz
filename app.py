@@ -45,7 +45,7 @@ with tab6:
     
     # Első: Sunburst (column)
     st.markdown("**Sunburst:**")
-    components.iframe(f"{base_url}3sunburst_diagram.html", height=700)
+    components.iframe(f"{base_url}3sunburst_diagram.html", height=1000)
     
     # Második: Tablázatos (column)
     st.markdown("**Tablázatos graf:**")
