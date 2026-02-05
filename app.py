@@ -28,7 +28,7 @@ with tab3:
 with tab4:
     st.markdown("### 🎬 Animáció lassítva")
     components.html(f"""
-    <div style="width: 100%; height: 1300px; overflow: auto; padding: 10px;">
+    <div style="width: 100%; height: 800px; overflow: auto; padding: 10px;">
         <iframe src="{base_url}animacio_lassitva.html" 
                 style="width: 100%; height: 1250px; border: none; border-radius: 12px; 
                        box-shadow: 0 8px 24px rgba(0,0,0,0.15);"
