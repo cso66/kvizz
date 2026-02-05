@@ -65,13 +65,13 @@ with tab6:
     
     # Oszlop: Animáció
     st.markdown("**Animáció:**")
-    components.iframe(f"{base_url}animacio_lassitva.html", height=900)
+    components.iframe(f"{base_url}animacio_lassitva.html", height=1100, widht=2500)
     
     # Sor3: Chord + Heat
     st.markdown("**Chord + Heatmap:**")
     col1, col2 = st.columns(2)
-    with col1: components.iframe(f"{base_url}chord_diagram.html", height=500)
-    with col2: components.iframe(f"{base_url}heat_2025.html", height=500)
+    with col1: components.iframe(f"{base_url}chord_diagram.html", height=800)
+    with col2: components.iframe(f"{base_url}heat_2025.html", height=800)
         
 st.markdown("---")
 st.markdown("[👉 Teljes eredeti verzió](https://cso66.github.io/kvizz/) | ✨ Streamlit + Plotly")
