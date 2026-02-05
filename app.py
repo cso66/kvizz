@@ -7,35 +7,38 @@ st.markdown("# 🖥️ Kvíz vizualizációk")
 
 base_url = "https://cso66.github.io/kvizz/"
 
-# TABOK A TETEJÉN – mint az eredeti index.html!
+# 5 TAB a pontos elrendezéssel
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "Sunburst & Sankey", "Radar chartok", "Animáció & Chord", "Heatmap", "Összes"
+    "🌞 Sunburst", "🔗 Sankey-k", "📊 Radar-ok", "🎬 Animáció", "🔥 Heatmap + Chord"
 ])
 
 with tab1:
-    col1, col2 = st.columns(2)
-    with col1: components.iframe(f"{base_url}3sunburst_diagram.html", height=500)
-    with col2: components.iframe(f"{base_url}sankey2025_3.html", height=500)
-    st.markdown("---")
-    components.iframe(f"{base_url}sankey2024_.html", height=500)
+    st.markdown("### Sunburst diagram")
+    components.iframe(f"{base_url}3sunburst_diagram.html", height=800)
 
 with tab2:
+    st.markdown("### Sankey diagramok")
     col1, col2 = st.columns(2)
-    with col1: components.iframe(f"{base_url}radar_2025.html", height=500)
-    with col2: components.iframe(f"{base_url}radar_2024.html", height=500)
+    with col1: components.iframe(f"{base_url}sankey2024_.html", height=600)
+    with col2: components.iframe(f"{base_url}sankey2025_3.html", height=600)
 
 with tab3:
-    components.iframe(f"{base_url}animacio_lassitva.html", height=600)
-    st.markdown("---")
-    components.iframe(f"{base_url}chord_diagram.html", height=500)
+    st.markdown("### Radar diagramok")
+    col1, col2 = st.columns(2)
+    with col1: components.iframe(f"{base_url}radar_2024.html", height=600)
+    with col2: components.iframe(f"{base_url}radar_2025.html", height=600)
 
 with tab4:
-    components.iframe(f"{base_url}heat_2025.html", height=600)
-    st.markdown("---")
-    components.iframe(f"{base_url}tabla_graf.html", height=600)
+    st.markdown("### Animáció lassítva")
+    components.iframe(f"{base_url}animacio_lassitva.html", height=800)
 
 with tab5:
-    st.markdown("**Teljes GitHub Pages:** [cso66.github.io/kvizz/](https://cso66.github.io/kvizz/)")
+    st.markdown("### Heatmap 2025 + Chord diagram")
+    col1, col2 = st.columns(2)
+    with col1: components.iframe(f"{base_url}heat_2025.html", height=600)
+    with col2: components.iframe(f"{base_url}chord_diagram.html", height=600)
+    st.markdown("**Tablázatos graf:**")
+    components.iframe(f"{base_url}tabla_graf.html", height=500)
 
 st.markdown("---")
-st.caption("✨ Powered by Streamlit + Plotly")
+st.markdown("[👉 Teljes eredeti verzió](https://cso66.github.io/kvizz/) | ✨ Streamlit + Plotly")
