@@ -27,10 +27,16 @@ with tab3:
     col1, col2 = st.columns(2)
     with col1: components.iframe(f"{base_url}radar_2024.html", height=600)
     with col2: components.iframe(f"{base_url}radar_2025.html", height=600)
-
-col1, col2 = st.columns([3,1])  # 75% szélesség
-with col1:
-    components.iframe(f"{base_url}animacio_lassitva.html", height=900)
+        
+with tab4:
+    st.markdown("### 🎬 Animáció 2025/2")
+    components.html(f"""
+    <div style='width: 100%; display: flex; justify-content: center; align-items: center; padding: 20px;'>
+        <iframe src='{base_url}animacio_lassitva.html' 
+                width='95%' height='1000' style='border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'>
+        </iframe>
+    </div>
+    """, height=1050)
 
 with tab5:
     st.markdown("### Heatmap 2025 + Chord diagram")
