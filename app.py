@@ -9,10 +9,11 @@ st.markdown("""
 """)
 
 # Sidebar menü az index.html szerkezetével
-menu = st.sidebar.selectbox("Válassz ábrát:", [
-    "Sunburst", "Tablázatos graf", "Sankey 2025", "Sankey 2024",
-    "Radar 2025", "Radar 2024", "Animáció lassítva", "Chord diagram", "Heatmap 2025"
-])
+tab1, tab2, tab3 = st.tabs(["Sunburst & Sankey", "Radar & Chord", "Egyéb"])
+with tab1:
+    components.iframe("https://cso66.github.io/kvizz/3sunburst_diagram.html", height=500)
+    # stb.
+
 
 # BASE URL a te GitHub Pages oldaladra
 base_url = "https://cso66.github.io/kvizz/"
