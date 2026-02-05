@@ -19,8 +19,8 @@ with tab1:
 with tab2:
     st.markdown("### Sankey diagramok")
     col1, col2 = st.columns(2)
-    with col1: components.iframe(f"{base_url}sankey2025_3.html", height=600)
-    with col2: components.iframe(f"{base_url}sankey2024_.html", height=600)
+    with col1: components.iframe(f"{base_url}sankey2025_3.html", height=900)
+    with col2: components.iframe(f"{base_url}sankey2024_.html", height=900)
 
 with tab3:
     st.markdown("### Radar diagramok")
