@@ -14,23 +14,23 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
 
 with tab1:
     st.markdown("### Sunburst diagram")
-    components.iframe(f"{base_url}3sunburst_diagram.html", height=820)  # eredeti column méret
+    components.iframe(f"{base_url}3sunburst_diagram.html", height=1100)  # eredeti column méret
 
 with tab2:
     st.markdown("### Sankey diagramok")
     col1, col2 = st.columns(2)
-    with col1: components.iframe(f"{base_url}sankey2025_3.html", height=900)
-    with col2: components.iframe(f"{base_url}sankey2024_.html", height=900)
+    with col1: components.iframe(f"{base_url}sankey2025_3.html", height=1100)
+    with col2: components.iframe(f"{base_url}sankey2024_.html", height=1100)
 
 with tab3:
     st.markdown("### Radar diagramok")
     col1, col2 = st.columns(2)
-    with col1: components.iframe(f"{base_url}radar_2025.html", height=600)
-    with col2: components.iframe(f"{base_url}radar_2024.html", height=600)
+    with col1: components.iframe(f"{base_url}radar_2025.html", height=1100)
+    with col2: components.iframe(f"{base_url}radar_2024.html", height=1100)
 
 with tab4:
     st.markdown("### Animáció lassítva")
-    components.iframe(f"{base_url}animacio_lassitva.html", height=800)
+    components.iframe(f"{base_url}animacio_lassitva.html", height=1100)
 
 with tab5:
     st.markdown("### Heatmap 2025 + Chord diagram")
@@ -45,7 +45,7 @@ with tab6:
     
     # Első: Sunburst (column)
     st.markdown("**Sunburst:**")
-    components.iframe(f"{base_url}3sunburst_diagram.html", height=1000)
+    components.iframe(f"{base_url}3sunburst_diagram.html", height=1100)
     
     # Második: Tablázatos (column)
     st.markdown("**Tablázatos graf:**")
@@ -60,12 +60,12 @@ with tab6:
     # Sor2: 2 Radar (row)
     st.markdown("**Radar diagramok:**")
     col1, col2 = st.columns(2)
-    with col1: components.iframe(f"{base_url}radar_2025.html", height=500)
-    with col2: components.iframe(f"{base_url}radar_2024.html", height=500)
+    with col1: components.iframe(f"{base_url}radar_2025.html", height=800)
+    with col2: components.iframe(f"{base_url}radar_2024.html", height=800)
     
     # Oszlop: Animáció
     st.markdown("**Animáció:**")
-    components.iframe(f"{base_url}animacio_lassitva.html", height=700)
+    components.iframe(f"{base_url}animacio_lassitva.html", height=900)
     
     # Sor3: Chord + Heat
     st.markdown("**Chord + Heatmap:**")
