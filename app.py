@@ -7,14 +7,14 @@ st.markdown("# 🖥️ Kvíz vizualizációk")
 
 base_url = "https://cso66.github.io/kvizz/"
 
-# 5 TAB a pontos elrendezéssel
+# EREDETI MÉRETEKKEL: 5 TAB
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "🌞 Sunburst", "🔗 Sankey-k", "📊 Radar-ok", "🎬 Animáció", "🔥 Heatmap + Chord"
+    "🌞 Sunburst (820px)", "🔗 Sankey-k (600px)", "📊 Radar-ok (600px)", "🎬 Animáció (820px)", "🔥 Heat + Chord + Tabla"
 ])
 
 with tab1:
     st.markdown("### Sunburst diagram")
-    components.iframe(f"{base_url}3sunburst_diagram.html", height=800)
+    components.iframe(f"{base_url}3sunburst_diagram.html", height=820)  # eredeti column méret
 
 with tab2:
     st.markdown("### Sankey diagramok")
