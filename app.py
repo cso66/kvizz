@@ -9,7 +9,7 @@ base_url = "https://cso66.github.io/kvizz/"
 
 # 5 TAB a pontos elrendezéssel
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "🌞 Sunburst", "🔗 Sankey-k", "📊 Radar-ok", "🎬 Animáció", "🔥 Heatmap + Chord"
+    "🌞 Sunburst", "🔗 Sankey-k", "📊 Radar-ok", "🎬 Animáció (2025/2)", "🔥 Heatmap + Chord (2025/2)"
 ])
 
 with tab1:
@@ -37,8 +37,8 @@ with tab5:
     col1, col2 = st.columns(2)
     with col1: components.iframe(f"{base_url}heat_2025.html", height=600)
     with col2: components.iframe(f"{base_url}chord_diagram.html", height=600)
-    st.markdown("**Tablázatos graf:**")
-    components.iframe(f"{base_url}tabla_graf.html", height=500)
+    st.markdown("**Pontok:**")
+    components.iframe(f"{base_url}tabla_graf.html", height=800)
 
 st.markdown("---")
 st.markdown("[👉 Teljes eredeti verzió](https://cso66.github.io/kvizz/) | ✨ Streamlit + Plotly")
