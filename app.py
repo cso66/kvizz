@@ -43,89 +43,21 @@ with tab5:
     with col2: components.iframe(f"{base_url}chord_diagram.html", height=600)
 
 with tab6:
-    st.markdown("""
-    <style>
-    .stApp {{
-        background-color: #f5f5f5;
-    }}
-    .iframe-container {{
-        width: 100%;
-        padding: 20px;
-    }}
-    .iframe-column {{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        margin-bottom: 30px;
-    }}
-    .iframe-column iframe {{
-        width: 100%;
-        max-width: 1620px;
-        height: 820px;
-        border: none;
-        box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }}
-    .iframe-row {{
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        margin-bottom: 30px;
-    }}
-    .iframe-row > div {{
-        flex: 1;
-    }}
-    .iframe-row iframe {{
-        width: 100%;
-        height: 600px;
-        border: none;
-        box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }}
-    </style>
-    """, unsafe_allow_html=True)
+    st.markdown("### 🏠 ÖSSZES – eredeti elrendezés")
     
-    st.markdown('<h1 style="text-align: center;">Kvíz vizualizációk</h1>', unsafe_allow_html=True)
+    # 1. Column: Sunburst (820px)
+    st.markdown("**Sunburst diagram**")
+    components.iframe(f"{base_url}3sunburst_diagram.html", height=820)
     
-    # PONT OSAN AZ EREDETI SORREND!
-    st.markdown('<div class="iframe-container">', unsafe_allow_html=True)
+    # 2. Column: Tabla graf (820px)
+    st.markdown("**Tablázatos graf**")
+    components.iframe(f"{base_url}tabla_graf.html", height=820)
     
-    # Column1: Sunburst
-    st.markdown('<div class="iframe-column">', unsafe_allow_html=True)
-    components.iframe("3sunburst_diagram.html", height=820)
-    st.markdown('</div>', unsafe_allow_html=True)
-    
-    # Column2: Tabla graf
-    st.markdown('<div class="iframe-column">', unsafe_allow_html=True)
-    components.iframe("tabla_graf.html", height=820)
-    st.markdown('</div>', unsafe_allow_html=True)
-    
-    # Row1: Sankey-k
-    st.markdown('<div class="iframe-row">', unsafe_allow_html=True)
-    col1, col2 = st.columns([1,1])
-    with col1: components.iframe("sankey2025_3.html", height=600)
-    with col2: components.iframe("sankey2024_.html", height=600)
-    st.markdown('</div>', unsafe_allow_html=True)
-    
-    # Row2: Radar-ok
-    st.markdown('<div class="iframe-row">', unsafe_allow_html=True)
-    col1, col2 = st.columns([1,1])
-    with col1: components.iframe("radar_2025.html", height=600)
-    with col2: components.iframe("radar_2024.html", height=600)
-    st.markdown('</div>', unsafe_allow_html=True)
-    
-    # Column3: Animáció
-    st.markdown('<div class="iframe-column">', unsafe_allow_html=True)
-    components.iframe("animacio_lassitva.html", height=820)
-    st.markdown('</div>', unsafe_allow_html=True)
-    
-    # Row3: Chord + Heat
-    st.markdown('<div class="iframe-row">', unsafe_allow_html=True)
-    col1, col2 = st.columns([1,1])
-    with col1: components.iframe("chord_diagram.html", height=600)
-    with col2: components.iframe("heat_2025.html", height=600)
-    st.markdown('</div>', unsafe_allow_html=True)
-    
-    st.markdown('</div>', unsafe_allow_html=True)
+    # 3. Row1: Sankey-k (600px, 2 oszlop)
+    st.markdown("**Sankey diagramok**")
+    col1, col2 = st.columns(2)
+    with col1: components.iframe(f"{base_url}sankey2025_3.html", height=600)
+    with col2: components.iframe(f"{base_url}sankey2024_.html
 
 
 st.markdown("---")
