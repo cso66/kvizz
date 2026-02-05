@@ -46,7 +46,7 @@ with tab6:
     st.markdown("### 🏠 ÖSSZES – eredeti méretek")
     
     # Column1: Sunburst 820px
-    components.iframe(f"{base_url}3sunburst_diagram.html
+    components.iframe(f"{base_url}3sunburst_diagram.html", height=820)
 
 
 st.markdown("---")
