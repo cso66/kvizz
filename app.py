@@ -65,7 +65,7 @@ with tab6:
     
     # Oszlop: Animáció
     st.markdown("**Animáció:**")
-    components.iframe(f"{base_url}animacio_lassitva.html", widht=2500, height=1100)
+    components.iframe(f"{base_url}animacio_lassitva.html", width=2500, height=1100)
     
     # Sor3: Chord + Heat
     st.markdown("**Chord + Heatmap:**")
