@@ -26,7 +26,7 @@ with tab3:
     with col2: components.iframe(f"{base_url}radar_2024.html", height=600)
 
 with tab4:
-    components.iframe(f"{base_url}animacio_lassitva.html", height=1000)
+    components.iframe(f"{base_url}animacio_lassitva.html", height=1100)
 
 with tab5:
     col1, col2 = st.columns(2)
