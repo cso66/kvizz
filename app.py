@@ -43,21 +43,10 @@ with tab5:
     with col2: components.iframe(f"{base_url}chord_diagram.html", height=600)
 
 with tab6:
-    st.markdown("### 🏠 ÖSSZES – eredeti elrendezés")
+    st.markdown("### 🏠 ÖSSZES – eredeti méretek")
     
-    # 1. Column: Sunburst (820px)
-    st.markdown("**Sunburst diagram**")
-    components.iframe(f"{base_url}3sunburst_diagram.html", height=820)
-    
-    # 2. Column: Tabla graf (820px)
-    st.markdown("**Tablázatos graf**")
-    components.iframe(f"{base_url}tabla_graf.html", height=820)
-    
-    # 3. Row1: Sankey-k (600px, 2 oszlop)
-    st.markdown("**Sankey diagramok**")
-    col1, col2 = st.columns(2)
-    with col1: components.iframe(f"{base_url}sankey2025_3.html", height=600)
-    with col2: components.iframe(f"{base_url}sankey2024_.html
+    # Column1: Sunburst 820px
+    components.iframe(f"{base_url}3sunburst_diagram.html
 
 
 st.markdown("---")
