@@ -9,7 +9,7 @@ base_url = "https://cso66.github.io/kvizz/"
 
 # EREDETI MÉRETEKKEL: 5 TAB
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
-    "🌞 Sunburst (820px)", "🔗 Sankey-k (600px)", "📊 Radar-ok (600px)", "🎬 Animáció (820px)", "🔥 Heat + Chord + Tabla", "Összes vizu"
+    "🌞 Sunburst", "🔗 Sankey", "📊 Radar", "🎬 Animáció", "🔥 Heat + Chord + Tabla", "Összes vizu"
 ])
 
 with tab1:
@@ -38,7 +38,7 @@ with tab5:
     with col1: components.iframe(f"{base_url}heat_2025.html", height=600)
     with col2: components.iframe(f"{base_url}chord_diagram.html", height=600)
     st.markdown("**Tablázatos graf:**")
-    components.iframe(f"{base_url}tabla_graf.html", height=500)
+    components.iframe(f"{base_url}tabla_graf.html", height=900)
 
 with tab6:
     st.markdown("### 🏠 Minden egy helyen – eredeti layout")
@@ -49,7 +49,7 @@ with tab6:
     
     # Második: Tablázatos (column)
     st.markdown("**Tablázatos graf:**")
-    components.iframe(f"{base_url}tabla_graf.html", height=700)
+    components.iframe(f"{base_url}tabla_graf.html", height=900)
     
     # Sor1: 2 Sankey (row)
     st.markdown("**Sankey diagramok:**")
