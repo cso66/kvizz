@@ -29,8 +29,8 @@ with tab3:
     with col2: components.iframe(f"{base_url}radar_2025.html", height=600)
 
 with tab4:
-    st.markdown("### Animáció lassítva")
-    components.iframe(f"{base_url}animacio_lassitva.html", height=800)
+    st.markdown("### Animáció 2025/2")
+    components.iframe(f"{base_url}animacio_lassitva.html", height=1000)
 
 with tab5:
     st.markdown("### Heatmap 2025 + Chord diagram")
