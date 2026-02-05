@@ -26,7 +26,17 @@ with tab3:
     with col2: components.iframe(f"{base_url}radar_2024.html", height=600)
 
 with tab4:
-    components.iframe(f"{base_url}animacio_lassitva.html", height=1100)
+    st.markdown("### 🎬 Animáció lassítva – teljes szélesség")
+    components.html(f"""
+    <div style="width: 100vw; height: 1100px; display: flex; justify-content: center; padding: 10px;">
+        <iframe src="{base_url}animacio_lassitva.html" 
+                style="width: 99%; height: 1050px; border: none; border-radius: 12px; 
+                       box-shadow: 0 8px 24px rgba(0,0,0,0.15);"
+                frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
+    """, height=1120)
+
 
 with tab5:
     col1, col2 = st.columns(2)
