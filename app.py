@@ -7,47 +7,38 @@ st.markdown("# 🖥️ Kvíz vizualizációk")
 
 base_url = "https://cso66.github.io/kvizz/"
 
-# 6 TAB – utolsó az ÖSSZES!
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
-    "🌞 Sunburst", "🔗 Sankey-k", "📊 Radar-ok", "🎬 Animáció", "🔥 Heat + Chord", "🏠 ÖSSZES"
+# 5 TAB a pontos elrendezéssel
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
+    "🌞 Sunburst", "🔗 Sankey-k", "📊 Radar-ok", "🎬 Animáció", "🔥 Heatmap + Chord"
 ])
 
 with tab1:
+    st.markdown("### Sunburst diagram")
     components.iframe(f"{base_url}3sunburst_diagram.html", height=800)
 
 with tab2:
+    st.markdown("### Sankey diagramok")
     col1, col2 = st.columns(2)
     with col1: components.iframe(f"{base_url}sankey2025_3.html", height=600)
     with col2: components.iframe(f"{base_url}sankey2024_.html", height=600)
 
 with tab3:
+    st.markdown("### Radar diagramok")
     col1, col2 = st.columns(2)
     with col1: components.iframe(f"{base_url}radar_2025.html", height=600)
     with col2: components.iframe(f"{base_url}radar_2024.html", height=600)
 
 with tab4:
-    st.markdown("### 🎬 Animáció lassítva")
-    components.html(f"""
-    <div style="width: 100%; height: 800px; overflow: auto; padding: 10px;">
-        <iframe src="{base_url}animacio_lassitva.html" 
-                style="width: 100%; height: 1250px; border: none; border-radius: 12px; 
-                       box-shadow: 0 8px 24px rgba(0,0,0,0.15);"
-                frameborder="0" scrolling="auto">
-        </iframe>
-    </div>
-    """, height=1350)
+    st.markdown("### Animáció lassítva")
+    components.iframe(f"{base_url}animacio_lassitva.html", height=800)
 
 with tab5:
+    st.markdown("### Heatmap 2025 + Chord diagram")
     col1, col2 = st.columns(2)
     with col1: components.iframe(f"{base_url}heat_2025.html", height=600)
     with col2: components.iframe(f"{base_url}chord_diagram.html", height=600)
-
-with tab6:
-    st.markdown("### 🏠 ÖSSZES – eredeti méretek")
-    
-    # Column1: Sunburst 820px
-    components.iframe(f"{base_url}3sunburst_diagram.html", height=820)
-
+    st.markdown("**Tablázatos graf:**")
+    components.iframe(f"{base_url}tabla_graf.html", height=500)
 
 st.markdown("---")
-st.markdown("[👉 Eredeti GitHub Pages](https://cso66.github.io/kvizz/) | ✨ Streamlit Dashboard")
+st.markdown("[👉 Teljes eredeti verzió](https://cso66.github.io/kvizz/) | ✨ Streamlit + Plotly")
